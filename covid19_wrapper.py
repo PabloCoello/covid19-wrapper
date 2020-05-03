@@ -42,6 +42,7 @@ class covid19():
         return(row)
 
 if __name__ == "__main__":
-	cv = covid19()
-	df = cv.df
+    cv = covid19()
+    df = cv.df
     df_latest = cv.latest
+    df.to_excel('covid.xlsx')
